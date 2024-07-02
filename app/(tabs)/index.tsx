@@ -11,26 +11,52 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+        
+    
+        source={require('@/assets/images/mask.jpeg')}
           style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Emerson Argote</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">Bio</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
+          <ThemedText type="defaultSemiBold"> Role: Designer</ThemedText> 
+          {/* Press{' '} */}
+          d{/* <ThemedText type="defaultSemiBold">
             {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
           </ThemedText>{' '}
-          to open developer tools.
+          to open developer tools. */}
+        </ThemedText>
+       
+       <ThemedText>
+        Hello my Name is Emerson Argote, one thing that Im well associate with is art, I have loved the idea of creating whatever
+        </ThemedText>
+        
+        <ThemedText>
+          comes acrross my mind. Having this as my passon started when I was young where I was obsesed with many animated shows 
+        </ThemedText>
+        
+        <ThemedText>
+          and programs such as those comming from Qubo and PBS kids. This passon was enhanced when I met an artist in 9th grade
+        </ThemedText>
+        
+        <ThemedText>
+          where they drew me in their  detailed artstyle, I was encaptivated by this display of art in which drove my passion 
+        </ThemedText>
+        
+        <ThemedText>
+          for art and further more into animation. Which leads me to presure a carrer in animation, whether in the storyboard,
+        </ThemedText>
+        
+        <ThemedText>
+          character design, or rough animator division of the animation industry.
         </ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
+      {/* <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 2: Explore</ThemedText>
         <ThemedText>
           Tap the Explore tab to learn more about what's included in this starter app.
@@ -45,7 +71,7 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
-      </ThemedView>
+      </ThemedView> */}
     </ParallaxScrollView>
   );
 }
@@ -61,10 +87,17 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 178,
+    height: 290,
     width: 290,
     bottom: 0,
-    left: 0,
+    left: 50,
     position: 'absolute',
+    borderRadius: 50,
   },
+  ParallaxScrollView: {
+    left: 30,
+    bottom:10,
+    position: 'absolute',
+  }
+
 });
